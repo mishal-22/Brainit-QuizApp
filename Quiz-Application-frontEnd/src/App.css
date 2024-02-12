@@ -1,0 +1,576 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* styles.css */
+.body-background {
+  background-image: url("/background-5.jpg");
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  height: 100vh; /* Make the container take up the full viewport height */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+body{
+  background-image: url("/background-4.jpg");
+  background-size: cover; /* Cover the entire container */
+  background-position: center;
+}
+
+.body-content {
+  text-align: center;
+  color: rgb(0, 0, 0); /* Text color */
+
+}
+.body-content h1{
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.body-content h2{
+  font-size: 35px;
+  font-family:cursive;
+  margin-left: 150px;
+  color: #271212;
+}
+
+nav {
+  background-color: #333;
+  color: rgb(209, 209, 209);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  
+}
+
+h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.options {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+}
+
+.options a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.options a:hover {
+  background-color: #555;
+}
+.user-registration {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-registration form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.user-registration label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.user-registration input[type="text"],
+.user-registration input[type="email"],
+.user-registration input[type="password"],
+.user-registration select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* margin-right: -20px; */
+}
+
+.user-registration input[type="radio"] {
+  margin-right: 8px;
+}
+
+.user-registration select {
+  background-color: #fff;
+}
+
+.user-registration input[type="submit"] {
+  padding: 12px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.user-registration input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.login {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 50px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 40.55vh;
+}
+
+.login label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login input[type="submit"] {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.questions-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #6d6a6a;
+}
+
+.questions-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+.questions-nav a:hover {
+  background-color: #555;
+}
+.active-link {
+  font-weight: bold;
+}
+
+.ques-heading {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+
+}
+
+.category-selection {
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+.category-selection a {
+  text-decoration: none;
+  color: #424141;
+  margin-left: 10px;
+}
+
+.category-selection a:hover {
+  background-color: #e4e1e1;
+  border-radius: 5px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+
+.add-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-form label {
+  margin-bottom: 10px;
+}
+
+.add-form label span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.add-form input[type="text"] {
+  width: 450px;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-form button:hover {
+  background-color: #0056b3;
+}
+.all-questions-container {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.allQuestions {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.allQuestions p {
+  margin: 5px 0;
+  
+}
+
+.allQuestions p span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.question {
+  font-weight: bold;
+  color: #ff0000;
+  font-size: 20px;
+}
+.right-answer{
+  color: #37af07;
+}
+
+.action-buttons {
+  margin-top: 10px;
+}
+
+.action-buttons button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.action-buttons button:hover {
+  background-color: #0056b3;
+}
+.quiz-nav {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 12px;
+  background-color: #6d6a6a;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #424141;
+  padding: 8px 16px;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  background-color: #e4e1e1;
+}
+
+.nav-link span.icon {
+  margin-right: 5px;
+}
+
+.active-link {
+  font-weight: bold;
+}
+.create-quiz {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-height: 57vh;
+}
+
+.create-quiz form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-quiz label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.create-quiz label span {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.create-quiz input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.create-quiz button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-quiz button:hover {
+  background-color: #0056b3;
+}
+input::placeholder {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.quiz-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ min-height: 73.5vh;
+}
+
+.quiz-main-box {
+  margin: 20px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 6px;
+  transition: transform 0.3s ease-in-out;
+}
+.quiz-main-box:hover{
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.quiz-box-link {
+  text-decoration: none;
+  color: inherit;
+  /* transition: transform 0.3s ease-in-out;  */
+}
+/* .quiz-box-link:hover{
+  transform: scale(1.07); 
+} */
+
+.quiz-box {
+  width: 300px;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.quiz-box:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /* background-color: #959191; */
+  transition: .5s;
+}
+
+.quiz-title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.quiz-info {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.action-buttons button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.action-buttons button:hover {
+  background-color: #ac0e1e;
+}
+
+
+.custom-quiz-container {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-quiz-container h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.custom-quiz-container form {
+  margin-top: 20px;
+}
+
+.custom-quiz-container input[type="radio"] {
+  margin-right: 10px;
+}
+
+.custom-quiz-container input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 250px;
+  margin-top: 30px;
+}
+
+.custom-quiz-container input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.custom-quiz-container label {
+  font-size: 16px;
+}
+
+.custom-quiz-container br {
+  margin-bottom: 10px;
+}
+
+.clear-button {
+  background-color: #3665f4;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-left: 500px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: #d32f2f;
+}
+/* Modal container */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content */
+.modal-content {
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(78, 58, 58, 0.3);
+  text-align: center  ;
+}
+
+/* Close button */
+.modal-content button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  /* margin-top: 20px; */
+  margin-left: auto;
+  
+}
+
+/* Close button on hover */
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+.score{
+  text-align: center;
+  color: #f60000;
+}
+.footer {
+  background-color: #333; /* Background color of the footer */
+  color: white; /* Text color */
+  padding: 20px; /* Padding around the content inside the footer */
+  text-align: center; /* Center-align the content */
+  position: relative;
+  bottom: 0;
+  width: auto; /* Make the footer span the entire width */
+
+}
+
+
